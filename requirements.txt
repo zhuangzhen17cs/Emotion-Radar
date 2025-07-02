@@ -1,0 +1,14 @@
+streamlit
+opencv-python
+deepface
+numpy
+matplotlib
+sounddevice
+librosa
+scikit-learn
+joblib
+
+pyaudio
+torch
+torchaudio
+transformers
