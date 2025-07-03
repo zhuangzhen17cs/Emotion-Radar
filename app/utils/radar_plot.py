@@ -13,4 +13,6 @@ def plot_emotion_radar(emotion_scores, labels):
     ax.plot(angles, scores, 'o-', linewidth=2)
     ax.fill(angles, scores, alpha=0.25)
     ax.set_thetagrids(np.degrees(angles), labels)
+
+    ax.tick_params(labelsize=8)
     return fig
