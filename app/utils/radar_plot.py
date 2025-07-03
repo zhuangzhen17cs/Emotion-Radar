@@ -7,6 +7,8 @@ def plot_emotion_radar(emotion_scores, labels):
     angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()
     angles += angles[:1]
 
+    labels += labels[:1]
+
     fig, ax = plt.subplots(figsize=(4,4), subplot_kw={'polar': True})
     ax.plot(angles, scores, 'o-', linewidth=2)
     ax.fill(angles, scores, alpha=0.25)
